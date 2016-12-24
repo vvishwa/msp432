@@ -1,0 +1,86 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.22.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Vijay Vishwakarma, edx, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.22
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.22
+Dialog DLL:      DCM.DLL V1.13.9.0
+Target DLL:      CMSIS_AGDI.dll V1.27.0.0
+Dialog DLL:      TCM.DLL V1.21.0.0
+ 
+<h2>Project:</h2>
+C:\Keil\msp432\Lab6wLab1_MSP432\Lab6.uvprojx
+Project File Date:  11/06/2016
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Lab6'
+compiling Lab6.c...
+compiling AP_Lab6.c...
+AP_Lab6.c(243): warning:  #223-D: function "strlen" declared implicitly
+    *msg=strlen(name)+7;msg++;  // length determined at run time 6+string length
+AP_Lab6.c(315): warning:  #223-D: function "strlen" declared implicitly
+    *msg=strlen(name)+8;msg++;  // length = 12
+AP_Lab6.c(381): warning:  #223-D: function "strlen" declared implicitly
+    *msg=strlen(name)+3;msg++;  // length = 12
+AP_Lab6.c(441): warning:  #223-D: function "strlen" declared implicitly
+    *msg=strlen(name)+11;msg++;  // length + 12
+AP_Lab6.c: 4 warnings, 0 errors
+compiling CortexM.c...
+assembling startup_msp432p401r_uvision.s...
+compiling Profile.c...
+compiling UART0.c...
+compiling UART1.c...
+compiling system_msp432p401r.c...
+compiling GPIO.c...
+compiling AP.c...
+compiling BSP.c...
+linking...
+Program Size: Code=17774 RO-data=1950 RW-data=424 ZI-data=5048  
+".\Objects\Lab6.axf" - 0 Error(s), 4 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.0.pack
+                ARM::CMSIS:CORE:5.0.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.0
+
+Package Vendor: TexasInstruments
+                http://software-dl.ti.com/msp430/msp430_public_sw/mcu/msp430/mspkeil/latest/exports/TexasInstruments.MSP432P4xx_DFP.2.2.1.pack
+                TexasInstruments::Device:Startup:2.2.1
+                Device Family Pack for Texas Instruments MSP432 Series
+   * Component: Startup Version: 2.2.1
+
+<h2>Collection of Component include folders:</h2>
+  C:\Keil\msp432\Lab6wLab1_MSP432\RTE\_Lab6
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\TexasInstruments\MSP432P4xx_DFP\2.2.1\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.0
+
+   * Component: TexasInstruments::Device:Startup:2.2.1
+      Source file:   Device\Source\startup_msp432p401r_uvision.s
+      Source file:   Examples\BlinkLED\blinkLED.c
+      Include file:  Device\Include\msp_compatibility.h
+      Source file:   Examples\EmptyMain\main.c
+      Source file:   Device\Source\system_msp432p401r.c
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>
